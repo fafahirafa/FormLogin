@@ -4,15 +4,15 @@ import {Router, Stack, Scene} from 'react-native-router-flux';
 
 import Login from '../pages/Login';
 import Signup from '../pages/Signup';
-import Profile from '../pages/Profile';
+import Profile from "../pages/Profile";
 import Home from '../pages/Home';
 
-// const AppNavigator = StackNavigator({
-//     Login: { screen: Login},
-//     Home: { screen: Home},
-// });
+const AppNavigator = StackNavigator({
+    Login: { screen: Login},
+    Home: { screen: Home},
+});
 
-class Routes extends Component<{}> {
+export default class Routes extends Component<{}> {
 	render() {
 		return(
 			<Router>
@@ -25,9 +25,9 @@ class Routes extends Component<{}> {
 								<Scene key="profile" component={Profile} />
 							</Scene>
 					</Scene>
-			</Router>
+			 </Router>
 			)
 	}
 }
 
-export default Routes;    
+export default AppNavigator;    
