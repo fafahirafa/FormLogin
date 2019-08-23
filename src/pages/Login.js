@@ -132,7 +132,7 @@ class Login extends Component<{}> {
         <TouchableOpacity style={styles.button} onPress={handleSubmit(this.onSubmit)}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.button} onPress={handleSubmit(this.props.navigation.navigate('Home'))}>
           <Text style={styles.buttonText}>Home</Text>
         </TouchableOpacity>
 

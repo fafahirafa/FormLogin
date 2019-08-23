@@ -5,12 +5,8 @@ import {Router, Stack, Scene} from 'react-native-router-flux';
 import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 import Profile from "../pages/Profile";
-import Home from '../pages/Home';
+//import Home from '../pages/Home';
 
-const AppNavigator = StackNavigator({
-    Login: { screen: Login},
-    Home: { screen: Home},
-});
 
 export default class Routes extends Component<{}> {
 	render() {
@@ -29,5 +25,3 @@ export default class Routes extends Component<{}> {
 			)
 	}
 }
-
-export default AppNavigator;    
