@@ -1,3 +1,4 @@
+import {NavigationActions} from 'react-navigation';
 import React, { Component } from 'react';
 import {
   StyleSheet,
