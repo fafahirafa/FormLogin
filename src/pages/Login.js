@@ -62,7 +62,11 @@ class Login extends Component<{}> {
 
 	signup() {
 		Actions.signup()
-	}
+  }
+  
+  toHome() {
+    Actions.home()
+  }
 
   loginUser = async (values) => {
       try {
@@ -132,7 +136,7 @@ class Login extends Component<{}> {
         <TouchableOpacity style={styles.button} onPress={handleSubmit(this.onSubmit)}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={handleSubmit(this.props.navigation.navigate('Home'))}>
+        <TouchableOpacity style={styles.button} onPress={this.toHome}>
           <Text style={styles.buttonText}>Home</Text>
         </TouchableOpacity>
 
