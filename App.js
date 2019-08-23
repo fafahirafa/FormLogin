@@ -16,7 +16,7 @@ import {Provider} from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
 import Main from "./src/Main";
 import persist from './src/config/store'; 
-import AppNavigator from './AppNavigator'; 
+// import AppNavigator from './AppNavigator'; 
 
 const persistStore = persist();
 
@@ -26,7 +26,7 @@ export default class App extends Component<Props>{
       <Provider store={persistStore.store}>
         <PersistGate loading={null} persistor={persistStore.persistor}>
           <Main/>
-          <AppNavigator/>
+          {/* <AppNavigator/> */}
         </PersistGate>
       </Provider>
     );
